@@ -5,22 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
-    <div class="main-container">
-        <aside class="aside active" id="aside">
-            <div class="c-aside">
-                <div class="aside-brand">
-                    <a href="#" class="aside-brand-link">
-                        <img src="images/logo-jecx-studios.svg" alt="LOGO" class="aside-brand-link__image">
-                        <p class="aside-brand-link__text">JECX STUDIOS</p>
-                    </a>
+    <header class="header">
+        <div class="container">
+            <div class="c-header">
+                <div class="header-brand">
+                    <div class="c-header-brand">
+                        <button title="Menú principal" id="buttonAside" class="header-brand__button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                        <a href="#" class="header-brand-link">
+                            <img src="images/logo-jecx-studios.svg" alt="LOGO" class="header-brand-link__image">
+                            <p class="header-brand-link__text" id="asideBrandLinkText">JECX STUDIOS</p>
+                        </a>
+                    </div>
                 </div>
+                <div class="header-profile">
+                    <div class="c-header-profile">
+                        <div class="header-profile-picture">
+                            <img src="images/profile.jpg" alt="Profile" class="header-profile-picture__image">
+                        </div>
+                        <div class="header-profile-info">
+                            <p class="header-profile-info__name">Jecx Studios</p>
+                        </div>
+                        <div class="header-profile-figure">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <aside class="aside" id="aside">
+            <div class="c-aside">
                 <nav class="aside-nav">
                     <ul class="aside-nav-list">
                         <li class="aside-nav-item">
-                            <a href="#" class="aside-nav-link active">
+                            <a title="Inicio" href="#" class="aside-nav-link active">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                                 </svg>
@@ -30,7 +58,7 @@
                             </a>
                         </li>
                         <li class="aside-nav-item">
-                            <a href="#" class="aside-nav-link">
+                            <a title="Finanzas" href="#" class="aside-nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
@@ -43,43 +71,135 @@
                 </nav>
             </div>
         </aside>
-        <div class="main-content" id="mainContent">
-            <header class="header">
-                <div class="container">
-                    <div class="c-header">
-                        <div class="header-responsive">
-                            <button id="buttonAside" class="header-responsive__button">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="header-profile">
-                            <div class="c-header-profile">
-                                <div class="header-profile-picture">
-                                    <img src="images/profile.jpg" alt="Profile" class="header-profile-picture__image">
-                                </div>
-                                <div class="header-profile-info">
-                                    <p class="header-profile-info__name">Jecx Studios</p>
-                                </div>
-                                <div class="header-profile-figure">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+        <div class="content-wrapper" id="contentWrapper">
             <main class="main">
                 <div class="container">
                     <div class="c-main">
                         <section class="main-heading">
                             <h1 class="main-heading__title">Dashboard</h1>
                         </section>
-                        <section class="main-wrapper">
+                        <section class="main-content">
                             <div class="main-wrapper__content">
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Ingresos</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Egresos</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Balance</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Ingresos</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Egresos</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Balance</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Ingresos</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Egresos</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Balance</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Ingresos</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Egresos</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-wrapper__content-card">
+                                    <div class="c-main-wrapper__content-card">
+                                        <div class="main-wrapper__content-card-header">
+                                            <p class="main-wrapper__content-card-header__title">Balance</p>
+                                        </div>
+                                        <div class="main-wrapper__content-card-body">
+                                            <p class="main-wrapper__content-card-body__text">S/ 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="main-wrapper__content-card">
                                     <div class="c-main-wrapper__content-card">
                                         <div class="main-wrapper__content-card-header">
@@ -116,6 +236,7 @@
                 </div>
             </main>
         </div>
+        <div class="overlay" id="overlay"></div>
     </div>
     <script src="js/app.js"></script>
 </body>
